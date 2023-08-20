@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -maxdepth 1 \( ! -name . -prune \) -exec ls -al {} \; -exec echo \nParent Directory: \; -exec ls -al .. \; -exec echo \n/boot Directory: \; -exec ls -al /boot \;
